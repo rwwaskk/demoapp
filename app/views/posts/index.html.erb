@@ -1,0 +1,4 @@
+<h1>posts/index</h1>
+<% @posts.each do |post|%>
+	<%=post.content%> by <%=post.user.username%><br>
+<%end%>

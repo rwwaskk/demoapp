@@ -1,0 +1,9 @@
+<h1>User Page for:</h1>
+username:<%=@user.username%><br>
+email:<%=@user.email%><br>
+<%= render "posts/form" %><br>
+<h2>My Posts</h2>
+<% @posts.each do |post|%>
+	<%=post.content%> <br>
+<%end%>
+<%=link_to 'edit account' ,edit_user_registration_path(current_user)%>
